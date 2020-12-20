@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  background-color: #0d0d0d;
+  color: white;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+}
+
+.imageWrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+}
+
+.slide-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination {
+  bottom: 0;
+  padding-bottom: 10px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+}
+
+.swiper-pagination-bullet {
+  background-color: white;
+  opacity: 0.5;
+  width: 6px;
+  height: 6px;
+}
+.swiper-pagination-bullet-active {
+  background-color: #c39d42;
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+}
+.swiper-container-vertical > .swiper-pagination-bullets {
+  left: 80px;
+  bottom: 20px;
+  right: unset;
+  top: unset;
+  transform: rotate(270deg);
+  text-align: -webkit-center;
+}
+.swiper-container-vertical
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 20px 0px;
+}
+
+.swiper-slide-zoomed {
+  cursor: auto;
+}
+
+.texts {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+.title {
+  text-transform: uppercase;
+  margin-bottom: 0.2em;
+  font-family: 'Domaine Sans Display';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 5.2vw;
+  line-height: 1;
+  color: white;
+}
+
+.footer {
+  height: 40vh;
+}
+.upper,
+.lower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+  height: 50%;
+}
+
+.lower > div:first-child {
+  font-size: 20px;
+  opacity: 0.3;
+}
+
+hr {
+  opacity: 0.3;
+  border-bottom: thin;
+}
+
+.links > span {
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#we_go,
+.social-networks > img {
+  width: 35px;
+  height: 35px;
+  border-radius: 25%;
+  background-color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#privacy {
+  cursor: pointer;
+  text-decoration: underline;
+}
